@@ -1,0 +1,161 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Arial', sans-serif;
+}
+ul {
+    list-style-type: none;
+}
+a {
+    text-decoration: none;
+}
+
+header {
+    display: flex;
+    justify-content: space-between;
+    margin: 0 20px;
+}
+
+.header_left ul, .header_right ul {
+    height: 60px;
+    line-height: 60px;
+    display: flex;
+    align-items: center;
+}
+
+header ul li a, .left_footer ul a, .right_footer ul a, .top_footer p {
+    padding: 10px;
+    color: rgba(0, 0, 0, 0.7);
+    font-size: 14px;
+}
+
+header ul li a i {
+    font-size: 20px;
+    padding-top: 23px;
+    color: rgba(0, 0, 0, 0.5);
+}
+
+header ul li a i:hover {
+    font-size: 22px;
+    color: rgba(0, 0, 0, 0.8);
+}
+header ul li a:hover, .left_footer ul a:hover, .right_footer ul a:hover {
+    text-decoration: underline;
+}
+
+header ul li span {
+    background-color: coral;
+    height: 35px;
+    width: 35px;
+    border-radius: 50%;
+    display: flex;
+    color: white;
+    display: flex;
+}
+
+header ul li span:hover {
+    cursor: pointer;
+}
+
+header ul li span p {
+    line-height: 35px;
+    margin: auto;
+}
+
+.main_wrap {
+    width: 700px;
+    margin: auto;
+    margin-top: 200px;
+}
+
+.main {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.main .search_bar {
+    margin-top: 10px;
+    padding: 10px;
+    border: 1px solid rgba(0, 0, 0, 0.1);
+    border-radius: 35px;
+}
+
+.search_bar:hover {
+    border: 0;
+    box-shadow: 0px 0px 6px 1px #00000033;
+    transition-duration: 0.2s;
+}
+
+.search_bar input {
+    width: 400px;
+    border: 0;
+    height: 100%;
+    font-size: 17px;
+    line-height: 20px;
+}
+
+.search_bar input:focus {
+    outline: 0;
+}
+
+.search_bar i {
+    font-size: 18px;
+    color: rgba(0, 0, 0, 0.5);
+    padding: 0 5px;
+}
+
+.search_bar i.fa-microphone {
+    color: #4285F4;
+    cursor: pointer;
+}
+.search_bar i.fa-microphone:hover {
+    font-size: 20px;
+    transition-duration: 0.2s;
+}
+
+.buttons {
+    margin-top: 25px;
+}
+
+.buttons span {
+    background-color: #f2f2f2;
+    color: rgba(0, 0, 0, 0.5);
+    padding: 10px;
+    border-radius: 3px;
+    font-size: 14px;
+    margin: 0 15px;
+    cursor: pointer;
+}
+
+.buttons span:hover {
+    border: 1px solid lightgrey;
+    color: rgba(0, 0, 0, 0.8)
+}
+
+footer {
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+}
+
+.bot_footer {
+    display: flex;
+    justify-content: space-between;
+}
+
+.left_footer ul, .right_footer ul{
+    display: flex;
+    line-height: 40px;
+}
+
+.top_footer, .bot_footer {
+    background-color: #f2f2f2;
+    border: 1px solid rgba(0, 0, 0, 0.1);
+    padding: 0 10px;
+}
+
+.top_footer {
+    border-bottom: 0;
+}
