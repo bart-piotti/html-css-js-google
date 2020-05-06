@@ -44,7 +44,7 @@ header ul li a:hover, .left_footer ul a:hover, .right_footer ul a:hover {
     text-decoration: underline;
 }
 
-header ul li span {
+header ul li #prof_pic {
     background-color: coral;
     height: 35px;
     width: 35px;
@@ -58,11 +58,59 @@ header ul li span:hover {
     cursor: pointer;
 }
 
-header ul li span p {
+header ul li #prof_pic p {
     line-height: 35px;
     margin: auto;
 }
 
+#drop {
+    position: relative;
+}
+.drop_menu {
+    width: 320px;
+    height: 500px;
+    position: absolute;
+    right: -15px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    overflow: auto;
+    padding: 10px;
+    border-radius: 10px;
+    box-shadow: 0px 0px 15px -2px rgba(148,148,148,0.87);
+    display: none;
+}
+
+.display_flex{
+    display: flex;
+}
+.drop_menu span {
+    width: 30%;
+    height: 110px;
+    padding: 5px;
+    position: relative;
+    text-align: center;
+    border-radius: 10px;
+}
+
+.drop_menu span:hover {
+    background-color: rgba(41, 98, 255, .1);
+}
+.drop_menu span:hover p {
+    color: black;
+}
+.drop_menu span img {
+    width: 90%;
+}
+
+.drop_menu span p {
+    width: 100%;
+    position: absolute;
+    bottom: -15px;
+    left: 50%;
+    transform: translateX(-50%);
+    color: rgba(0, 0, 0, 0.5);
+}
 .main_wrap {
     width: 700px;
     margin: auto;
